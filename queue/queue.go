@@ -30,7 +30,7 @@ func ProcessQueue(queueName string, pubSubChannel string) {
 
 		var data map[string]interface{}
 		json.Unmarshal([]byte(result[1]), &data)
-		log.Println("Enqueuing order:", data)
+		log.Println("Enqueuing order/shipment:", data)
 
 		pubsub.Publish(pubSubChannel, data)
     }

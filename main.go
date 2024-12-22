@@ -25,5 +25,5 @@ func main() {
 }
 
 func handleMessage(data map[string]interface{}) {
-	log.Println("Received order message:", data)
+	log.Println("Received order/shipment message:", data)
 }
